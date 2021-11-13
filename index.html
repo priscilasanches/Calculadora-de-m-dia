@@ -5,34 +5,48 @@
     <meta charset="UTF-8">
     <title>Primeiro projeto - calculadora de média</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
   </head>
 
   <body>
-    <head>
-      <title> Calculadora de média</title>
-      <a href="https://alura.com.br/" target="_blank">
-        <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
-      </a>
-    </head>
+
+    <header>
+      <div class="container">
+        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" class="page-logo" alt="">
+        <h1 class="page-title">Calculadora de média</h1>
+        <a href="https://alura.com.br/" target="_blank">
+          <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+        </a>
+      </div>
+    </header>
  
     <main>
-      <div class="container">
-        <h1 class="page-title">Calculadora de média</h1>
-        <p class="page-subtitle">Informe a nota das provas:</p>
-        <div class="notas">
-          <input type="number" id="nota1" placeholder="1ª nota" min="0" max="10" step="0.5">
-          <input type="number" id="nota2" placeholder="2ª nota" min="0" max="10" step="0.5">
-          <input type="number" id="nota3" placeholder="3ª nota" min="0" max="10" step="0.5">
-          <input type="number" id="nota4" placeholder="4ª nota" min="0" max="10" step="0.5"><br>
-          <button onclick="mostraResultado()">Média final</button>
-         </div>  
-        <div class="mostraResultado "id="resultado"></div>
-      </div>
+        <h2 class="page-subtitle">Informe a nota das provas:</h2>
+        <ul class="notas">
+            <li>
+              <label for="primeiranota">Nota da primeira prova:</label>
+              <input type="number" id="primeiranota" placeholder="1ª nota">
+            </li>
+            <li>
+              <label for="segundanota">Nota da segunda prova:</label>
+              <input type="number" id="segundanota" placeholder="2ª nota">
+            </li>
+            <li>
+              <label for="terceiranota">Nota da terceira prova:</label>
+              <input type="number" id="terceiranota" placeholder="3ª nota">
+            </li>
+            <li>
+              <label for="quartanota">Nota da quarta prova:</label>
+              <input type="number" id="quartanota" placeholder="4ª nota">
+            </li>
+        </ul>
 
-            <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" class="page-logo" alt="">
+        <button onclick="mostraResultado()">Média final</button>
+
+        <div class="mostraResultado "id="resultado"></div>
     </main>
 
     <script  src="script.js"></script>
 
   </body>
-  </html>
+</html>
