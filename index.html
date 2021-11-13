@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br" >
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Primeiro projeto - calculadora de média</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <head>
+      <title> Calculadora de média</title>
+      <a href="https://alura.com.br/" target="_blank">
+        <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+      </a>
+    </head>
+ 
+    <main>
+      <div class="container">
+        <h1 class="page-title">Calculadora de média</h1>
+        <p class="page-subtitle">Informe a nota das provas:</p>
+        <div class="notas">
+          <input type="number" id="nota1" placeholder="1ª nota" min="0" max="10" step="0.5">
+          <input type="number" id="nota2" placeholder="2ª nota" min="0" max="10" step="0.5">
+          <input type="number" id="nota3" placeholder="3ª nota" min="0" max="10" step="0.5">
+          <input type="number" id="nota4" placeholder="4ª nota" min="0" max="10" step="0.5"><br>
+          <button onclick="mostraResultado()">Média final</button>
+         </div>  
+        <div class="mostraResultado "id="resultado"></div>
+      </div>
+
+            <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" class="page-logo" alt="">
+    </main>
+
+    <script  src="script.js"></script>
+
+  </body>
+  </html>
