@@ -1,17 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 body {
-  font-family: 'Montserrat';
-  font-size: 20px;
-  background: #55A979;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(#55A979, #D9F1E3);
 }
+
+main {
+  height: 500px;
+}
+
 
 /*header*/
 .container {
-  width: 80vh;
-  height: 20vh;
+  width: 500px;
   margin: 0 auto;
-  padding: 10px;
+  padding: 10px 0;
   text-align: center;
 }
 
@@ -28,22 +31,23 @@ body {
 }
 
 .alura-logo {
-  width: 5em;
+  width: 3em;
   position: absolute;
   top: 10px;
-  right: 10px;
+  left: 10px;
 }
 
 /*main*/
 .page-subtitle {
   color:#F0FFFF;
   font-size: 1.7em;
-  margin: 1em 0;
+  font-weight: 500;
+  margin: 1.5em 0 1em;
   text-align: center;
 }
 
 .notas {
-  width: 50%;
+  width: 500px;
   margin: 0 auto;
   text-align:  center;
 }
@@ -57,14 +61,13 @@ body {
   display:  block;
   margin-bottom: 0.5em;
   text-weight: bold;
-  font-size: 1em;
+  font-size: 1.1em;
 }
 
 .notas input {
   border-radius: 4px;
   padding: 6px;
-  margin-bottom: 0.5em;
-  max-width: 90%;
+  margin-bottom: 1em;
 }
 
 .button {
@@ -84,7 +87,7 @@ body {
 }
 
 .mostraResultado {
-  color:#F0FFFF;
+  color:#272E2A;
   font-size: 1.5em;
   margin-top: 1em;
   text-align: center;
