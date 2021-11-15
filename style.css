@@ -55,6 +55,8 @@ main {
 .notas li {
   display: inline-block;
   width: 40%;
+  margin: 0 3%;
+  box-sizing:  border-box;
 }
 
 .notas label {
